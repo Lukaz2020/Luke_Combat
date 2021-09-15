@@ -15,7 +15,7 @@ Citizen.CreateThread(function()
 	while true do
 		Citizen.Wait(0)
 
-    	local ped = GetPlayerPed(-1)
+    	local ped = PlayerPedID()
 
 		local selectedGun = GetSelectedPedWeapon(ped)
 
@@ -50,7 +50,7 @@ end)
 
 RegisterCommand('heal', function()
 
-local ped = GetPlayerPed(-1)
+local ped = PlayerPedID()
 local veh = GetVehiclePedIsIn(ped,false)
 if IsPedInVehicle(ped, veh, false) then
 Notif("~r~Player cannot heal in Vehicle!")
