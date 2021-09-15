@@ -8,6 +8,9 @@ Citizen.CreateThread(function()
 end)
 
 Citizen.CreateThread(function()
+           SetPlayerHealthRechargeMultiplier(ped, 0.0)
+       	   SetPedSuffersCriticalHits(ped, true)
+
 	local isGunASniper = false
 	while true do
 		Citizen.Wait(0)
@@ -87,7 +90,7 @@ if GetEntityHealth(ped) >> 200 then
 	FreezeEntityPosition(ped, true)
 	Citizen.Wait(5000)
 	FreezeEntityPosition(ped, false)
-	SetEntityHealth(ped, 200)
+	SetEntityArmor(ped, 200)
 	Notif("~y~Player has been Armored!")
 	print("player armored") 
 else 
