@@ -2,7 +2,6 @@
 Realism based Non-ESX simple combat system to add new functionalites
 
 # Full Contents list
---------------------------------------------------------------------------
 
 ~ Remove Crosshair
 ~ Block combat rolling
