@@ -6,4 +6,6 @@ Realism based Non-ESX simple combat system to add new functionalites
 ~ Remove Crosshair <br/>
 ~ Block combat rolling <br/>
 ~ Add /heal to heal players using animations and timers <br/>
-~ Add /armour to apply armour to player using animations and timers
+~ Add /armour to apply armour to player using animations and timers <br/>
+~ Ensures player is killed by headshots <br/>
+~ Stops automatic healing.
