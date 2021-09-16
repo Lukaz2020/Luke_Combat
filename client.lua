@@ -1,3 +1,5 @@
+ped = GetPlayerPed(-1)
+
 Citizen.CreateThread(function()
            SetPlayerHealthRechargeMultiplier(ped, 0.0)
        	   SetPedSuffersCriticalHits(ped, true)
