@@ -1,16 +1,11 @@
 Citizen.CreateThread(function()
-	while true do
-	Citizen.Wait(5)
-		if IsControlPressed(0, 25) then 
-	DisableControlAction(0, 22, true) -- Combat Rolling
-		end
-	end
-end)
-
-Citizen.CreateThread(function()
            SetPlayerHealthRechargeMultiplier(ped, 0.0)
        	   SetPedSuffersCriticalHits(ped, true)
-
+	
+		if IsControlPressed(0, 25) then 
+			DisableControlAction(0, 22, true) -- Combat Rolling
+		end
+		
 	local isGunASniper = false
 	while true do
 		Citizen.Wait(0)
