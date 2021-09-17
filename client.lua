@@ -1,4 +1,4 @@
-ped = GetPlayerPed(-1)
+ped = PlayerPedID()
 
 Citizen.CreateThread(function()
            SetPlayerHealthRechargeMultiplier(ped, 0.0)
