@@ -11,9 +11,6 @@ Citizen.CreateThread(function()
 	local isGunASniper = false
 	while true do
 		Citizen.Wait(0)
-
-    	local ped = PlayerPedID()
-
 		local selectedGun = GetSelectedPedWeapon(ped)
 
 		if selectedGun == 100416529 then -- Sniper Rifle
@@ -46,8 +43,7 @@ end)
 	end
 
 RegisterCommand('heal', function()
-
-local ped = PlayerPedID()
+		
 local veh = GetVehiclePedIsIn(ped,false)
 if IsPedInVehicle(ped, veh, false) then
 Notif("~r~Player cannot heal in Vehicle!")
@@ -76,7 +72,6 @@ end
 
 RegisterCommand('armor', function()
 
-local ped = GetPlayerPed(-1)
 local veh = GetVehiclePedIsIn(ped,false)
 if IsPedInVehicle(ped, veh, false) then
 Notif("~r~Player cannot armor up in Vehicle!")
