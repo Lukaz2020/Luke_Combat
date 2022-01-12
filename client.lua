@@ -1,12 +1,12 @@
 ped = PlayerPedID()
 
 Citizen.CreateThread(function()
-           SetPlayerHealthRechargeMultiplier(ped, 0.0)
-       	   SetPedSuffersCriticalHits(ped, true)
+	SetPlayerHealthRechargeMultiplier(ped, 0.0)
+       	SetPedSuffersCriticalHits(ped, true)
 	
-		if IsControlPressed(0, 25) then 
-			DisableControlAction(0, 22, true) -- Combat Rolling
-		end
+	if IsControlPressed(0, 25) then 
+		DisableControlAction(0, 22, true) -- Combat Rolling
+	end
 		
 	local isGunASniper = false
 	while true do
@@ -27,7 +27,6 @@ Citizen.CreateThread(function()
 			HideHudComponentThisFrame(14)
 		end
 	end
-end)
 
 	if not animatdictloaded then
 		Citizen.CreateThread(function()
@@ -41,6 +40,7 @@ end)
 			end
 		end)
 	end
+end)
 
 RegisterCommand('heal', function()
 		
@@ -90,7 +90,3 @@ Notif("~r~The Player is already at Max Armor")
 end
 end
 end, false)
-
-
-
-
